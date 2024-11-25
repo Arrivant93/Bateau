@@ -26,20 +26,20 @@ const routes: Routes = [
     path: 'bateau-details',
     loadChildren: () => import('./bateau-details/bateau-details.module').then( m => m.BateauDetailsPageModule)
   },
-
+{
     path: 'product-details/:id',
     loadChildren: () => import('./product-details/product-details.module').then(m => m.ProductDetailsPageModule)
   }
 
 
 ];
-
-];
-
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
   ],
   exports: [RouterModule]
 })
+export class AppRoutingModule { }
+
+
 
