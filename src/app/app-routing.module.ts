@@ -16,6 +16,7 @@ const routes: Routes = [
     loadChildren: () => import('./bateaux/bateaux.module').then( m => m.BateauxPageModule)
   },
   {
+
     path: 'bateaux',
     component: BateauxPage,
   },
@@ -26,6 +27,12 @@ const routes: Routes = [
     loadChildren: () => import('./bateau-details/bateau-details.module').then( m => m.BateauDetailsPageModule)
   },
 
+    path: 'product-details/:id',
+    loadChildren: () => import('./product-details/product-details.module').then(m => m.ProductDetailsPageModule)
+  }
+
+
+];
 
 ];
 
@@ -35,4 +42,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+
