@@ -1,16 +1,15 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 @Component({
-  selector: 'app-bateaux',
-  templateUrl: './bateaux.page.html',
-  styleUrls: ['./bateaux.page.scss'],
+  selector: 'app-bateau-details',
+  templateUrl: './bateau-details.page.html',
+  styleUrls: ['./bateau-details.page.scss'],
 })
-export class BateauxPage {
-  constructor(private router: Router){}
-  goToDetail(id: number) {
-    this.router.navigate(['/bateaux', id]); // Navigue vers la page avec l'ID du bateau
-  }
+export class BateauDetailsPage implements OnInit {
 
+ 
+  
+  bateau: any;
   bateaux = [
     {
       id: 1,
@@ -38,4 +37,11 @@ export class BateauxPage {
     },
    
   ];
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    const id = Number(this.route.snapshot.paramMap.get('id')); // Récupère l'ID depuis la route
+    this.bateau = this.bateaux.find((b) => b.id === id); // Trouve le bateau correspondant
+  }
+
 }
