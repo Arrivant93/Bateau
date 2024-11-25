@@ -1,0 +1,7 @@
+{
+  "name": "bateauti",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
