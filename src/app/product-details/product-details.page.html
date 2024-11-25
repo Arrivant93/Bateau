@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+        Retour
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Détails du Produit</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="product">
+  
+  <ion-card>
+    <img [src]="product.image" />
+    <ion-card-header>
+      <ion-card-title>{{ product.name }}</ion-card-title>
+      <ion-card-subtitle>{{ product.description }}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      
+      <div>
+        <ion-item>
+          <ion-label>Quantité :</ion-label>
+          <ion-button (click)="decreaseQuantity()" [disabled]="quantity <= 1">-</ion-button>
+          <ion-input type="number" [value]="quantity" readonly></ion-input>
+          <ion-button (click)="increaseQuantity()">+</ion-button>
+        </ion-item>
+      </div>
+
+      
+      <p>Prix total : {{ totalPrice | currency:'EUR' }}</p>
+      
+      
+      <ion-button expand="block" color="primary">
+        Ajouter au panier
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+ 
+  <ion-list>
+    <ion-list-header>
+      <h2>Suggestions de produits similaires</h2>
+    </ion-list-header>
+
+    <ion-card *ngFor="let suggestedProduct of suggestedProducts" (click)="onProductClick(suggestedProduct)">
+      <img [src]="suggestedProduct.image" />
+      <ion-card-header>
+        <ion-card-title>{{ suggestedProduct.name }}</ion-card-title>
+        <ion-card-subtitle>{{ suggestedProduct.description }}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Prix : {{ suggestedProduct.price }}</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>

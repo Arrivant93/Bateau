@@ -15,7 +15,7 @@
   <ion-grid>
     <ion-row>
       <ion-col size="12" *ngFor="let product of products">
-        <ion-card>
+        <ion-card (click)="onProductClick(product)">
           <img [src]="product.image" />
           <ion-card-header>
             <ion-card-title>{{ product.name }}</ion-card-title>
