@@ -1,0 +1,23 @@
+ion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centre le texte horizontalement */
+  }
+  
+  ion-img {
+    max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur de l'écran */
+    height: auto;    /* Maintient les proportions de l'image */
+  }
+  
+  h2 {
+    font-size: 1.8em; /* Ajuste la taille du titre */
+    margin-top: 10px;
+  }
+  
+  p {
+    font-size: 1.2em; /* Ajuste la taille de la description */
+    margin-top: 15px;
+  }
+  
