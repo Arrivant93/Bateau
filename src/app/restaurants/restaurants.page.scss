@@ -1,0 +1,13 @@
+ion-card {
+    margin: 10px;
+  }
+  
+  ion-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  ion-card-title {
+    font-size: 1.2em; /* Réduit la taille de la police du titre */
+  }
