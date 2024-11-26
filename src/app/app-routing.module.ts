@@ -31,7 +31,7 @@ const routes: Routes = [
     path: 'bateau-details',
     loadChildren: () => import('./bateau-details/bateau-details.module').then( m => m.BateauDetailsPageModule)
   },
-{
+
 
   {
 
@@ -48,7 +48,7 @@ const routes: Routes = [
     loadChildren: () => import('./restaurant-details/restaurant-details.module').then( m => m.RestaurantDetailsPageModule)
   },
   
-    path: 'contact',
+   { path: 'contact',
     loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
   }
 
