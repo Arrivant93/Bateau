@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "nom": "Le Sole de Pêche",
+      "description": "Bateau spécialisé dans la pêche de la sole.",
+      "image": "assets/img/bateau1.jpg"
+    },
+    {
+      "id": 2,
+      "nom": "Le Fileyeur Normand",
+      "description": "Idéal pour la pêche de coquilles Saint-Jacques.",
+      "image": "assets/img/bateau2.jpg"
+    },
+    {
+      "id": 3,
+      "nom": "L’Artisan de la Mer",
+      "description": "Bateau artisanal pour la pêche aux crustacés.",
+      "image": "assets/img/bateau3.jpg"
+    },
+    {
+      "id": 4,
+      "nom": "Le Marin Pêcheur",
+      "description": "Un classique pour la pêche en haute mer.",
+      "image": "assets/img/bateau4.jpg"
+    }
+  ]
+  
