@@ -1,17 +1,17 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/bateaux"></ion-back-button>
+      <ion-back-button defaultHref="/restaurants"></ion-back-button>
     </ion-buttons>
-    <ion-title>{{ bateau.nom }}</ion-title>
+    <ion-title>{{ restaurant.nom }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
-  <h2>{{ bateau.nom }}</h2>
-  <ion-img [src]="bateau.image"></ion-img>
+  <h2>{{ restaurant.nom }}</h2>
+  <ion-img [src]="restaurant.image"></ion-img>
   
-  <p>{{ bateau.description }}</p>
+  <p>{{ restaurant.description }}</p>
 </ion-content>
 <ion-footer>
   <ion-tab-bar>

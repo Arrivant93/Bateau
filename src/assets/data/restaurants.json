@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "nom": "La Moulerie",
+      "description":" Une sole fraîche entre 700g et 1.2kg, jamais congelée et disponible en filets ou entiers. Préparée selon la demande du client et toujours emballée sous vide pour garantir une fraîcheur optimale.",
+      "image": "assets/img/restau1.jpg"
+    },
+    {
+      "id": 2,
+      "nom": "Paille & Plage",
+      "description": "Pêchées de manière durable en Normandie, nos coquilles Saint-Jacques sont un délice pour les amateurs de fruits de mer frais. Disponibles toute lannée.",
+      "image": "assets/img/restau2.jpg"
+    },
+    {
+      "id": 3,
+      "nom": "Le Verre & l'Assiette",
+      "description": "Nos crustacés vivants sont soigneusement sélectionnés pour leur qualité. Vous pouvez les commander en ligne pour une livraison ultra-rapide.",
+      "image": "assets/img/restau3.jpg"
+    },
+    {
+      "id": 4,
+      "nom": "Vetelli",
+      "description": "Nos poissons fumés sont préparés à la main selon des méthodes artisanales. Une expérience gustative unique, idéale pour les repas de fête.",
+      "image": "assets/img/restau4.jpg"
+    }
+   
+  ]
