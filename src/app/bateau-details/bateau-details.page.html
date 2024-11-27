@@ -3,14 +3,11 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/bateaux"></ion-back-button>
     </ion-buttons>
-    <ion-title>{{ bateau.nom }}</ion-title>
+    <ion-title>{{ bateau?.nom }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
-  <h2>{{ bateau.nom }}</h2>
-  <ion-img [src]="bateau.image"></ion-img>
-  
-  <p>{{ bateau.description }}</p>
+  <ion-img [src]="bateau?.image"></ion-img>
+  <p>{{ bateau?.description }}</p>
 </ion-content>
-

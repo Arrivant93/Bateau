@@ -3,14 +3,11 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/restaurants"></ion-back-button>
     </ion-buttons>
-    <ion-title>{{ restaurant.nom }}</ion-title>
+    <ion-title>{{ restaurant?.nom }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
-  <h2>{{ restaurant.nom }}</h2>
-  <ion-img [src]="restaurant.image"></ion-img>
-  
-  <p>{{ restaurant.description }}</p>
+  <ion-img [src]="restaurant?.image"></ion-img>
+  <p>{{ restaurant?.description }}</p>
 </ion-content>
-
