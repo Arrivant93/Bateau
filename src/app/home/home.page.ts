@@ -9,9 +9,9 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
   categories = [
-    { name: 'Crustacés', icon: 'assets/img/crustaces.png' },
+    { name: 'Langoustine', icon: 'restaurant-outline' }, 
     { name: 'Poisson', icon: 'fish-outline' },            
-    { name: 'Coquillage', icon: 'assets/img/coquillage.png' },          
+    { name: 'Coquillage', icon: 'leaf-outline' },          
     { name: 'Autres', icon: 'ellipsis-horizontal-outline' } 
   ];
 
