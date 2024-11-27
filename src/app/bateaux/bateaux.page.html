@@ -12,7 +12,7 @@
 
   <ion-grid>
     <ion-row>
-      <ion-col size="6" *ngFor="let bateau of bateaux">
+      <ion-col size="12" *ngFor="let bateau of bateaux">
         <ion-card (click)="goToDetail(bateau.id)">
           <ion-img [src]="bateau.image"></ion-img>
           <ion-card-header>
@@ -26,46 +26,9 @@
 
   
   
-  <ion-footer>
-    <ion-tab-bar>
-      <ion-tab-button tab="products">
-        <ion-icon name="cart-outline"></ion-icon>
-        <ion-label>Produits</ion-label>
-      </ion-tab-button>
-
-      <ion-tab-button tab="boats">
-        <ion-icon name="boat-outline"></ion-icon>
-        <ion-label>Bateaux</ion-label>
-      </ion-tab-button>
-
-      <ion-tab-button tab="restaurants" routerLink="/restaurants">
-        <ion-icon name="restaurant-outline"></ion-icon>
-        <ion-label>Restaurants</ion-label>
-      </ion-tab-button>
-
-      <ion-tab-button tab="recipes">
-        <ion-icon name="book-outline"></ion-icon>
-        <ion-label>Recettes</ion-label>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-footer>
+ 
   
-   
 
-  <ion-content class="ion-padding">
-    <ion-grid>
-      <ion-row>
-        <ion-col size="6" *ngFor="let bateau of bateaux">
-          <ion-card (click)="goToDetail(bateau.id)">
-            <ion-img [src]="bateau.image"></ion-img>
-            <ion-card-header>
-              <ion-card-title>{{ bateau.nom }}</ion-card-title>
-            </ion-card-header>
-          </ion-card>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-content>
-</ion-content>
+
 
 

@@ -10,9 +10,19 @@
       <ion-label>Bateaux</ion-label>
     </ion-tab-button>
 
+    <ion-tab-button tab="restaurants" routerLink="/restaurants">
+      <ion-icon name="restaurant-outline"></ion-icon>
+      <ion-label>Restaurants</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="recipes">
+      <ion-icon name="book-outline"></ion-icon>
+      <ion-label>Recettes</ion-label>
+    </ion-tab-button>
+
     <ion-tab-button tab="contact" (click)="navigateTo('contact')">
       <ion-icon name="call-outline"></ion-icon>
       <ion-label>Contact</ion-label>
     </ion-tab-button>
+    
   </ion-tab-bar>
 </ion-tabs>
