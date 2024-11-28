@@ -88,8 +88,7 @@ export class ProductDetailsPage implements OnInit {
     this.router.navigate(['/product-details', product.id]);
   }
   
-  addToCart(product: any) {
-    this.cartService.addToCart(product);
-    alert('Produit ajouté au panier !');
+  addToCart(product: any, quantity: number) {
+    this.cartService.addToCart(product, quantity);
   }
 }

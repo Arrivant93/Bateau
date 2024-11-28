@@ -27,11 +27,12 @@ export class CartPage implements OnInit {
   }
 
   loadCart() {
-    this.cart = this.cartService.getCart(); // Charger les produits du panier
+    this.cart = this.cartService.getCart(); // Charge tous les produits
+    this.total = this.cartService.getCartTotal(); // Met à jour le total
   }
 
-  removeItem(item: any) {
-    // Retirer le produit du panier
-    this.cartService.removeItem(item);
+  removeItem(product: any) {
+    this.cartService.removeItem(product); // Supprime le produit via le service
+    this.loadCart(); // Recharge le panier
   }
 }

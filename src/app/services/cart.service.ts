@@ -25,15 +25,21 @@ export class CartService {
     return this.cart;
   }
 
-  addToCart(product: any) {
-    const existingProduct = this.cart.find((item) => item.id === product.id);
+  addToCart(product: any, quantity: number = 1) {
+    // Vérifier si le produit avec la même configuration existe déjà
+    const existingProduct = this.cart.find(
+      (item) => item.id === product.id && item.quantity === quantity
+    );
+  
     if (existingProduct) {
-      existingProduct.quantity += 1;
+      // Si le produit existe déjà, augmenter uniquement la quantité
+      existingProduct.quantity += quantity;
     } else {
-      this.cart.push({ ...product, quantity: 1 });
+      // Sinon, ajouter le produit comme une nouvelle ligne
+      this.cart.push({ ...product, quantity });
     }
-
-    // Notifier les abonnés des changements
+  
+    // Mettre à jour les sujets réactifs
     this.updateCartData();
   }
 
@@ -52,8 +58,11 @@ export class CartService {
   }
 
   // Retirer un produit du panier
-  removeItem(item: any) {
-    this.cart = this.cart.filter(cartItem => cartItem.id !== item.id);
-    this.updateCartData(); // Mettre à jour les données après suppression
+  removeItem(product: any) {
+    // Supprimer l'élément correspondant
+    this.cart = this.cart.filter(cartItem => cartItem.id !== product.id);
+    
+    // Mettre à jour les sujets réactifs
+    this.updateCartData();
   }
 }
