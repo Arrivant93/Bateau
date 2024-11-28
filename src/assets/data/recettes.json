@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "name": "Filet de saumon à l'aneth",
+      "description": "Un saumon tendre grillé avec une sauce à l'aneth.",
+      "image": "assets/img/saumon.jpg",
+      "ingredients": ["Saumon", "Aneth", "Citron", "Sel", "Poivre"],
+      "instructions": [
+        "Assaisonner le saumon avec sel, poivre et citron.",
+        "Griller à feu moyen jusqu'à cuisson.",
+        "Servir avec une sauce à l'aneth."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Soupe de poissons",
+      "description": "Une soupe délicieuse et réconfortante.",
+      "image": "assets/img/soupe.jpg",
+      "ingredients": ["Poissons variés", "Tomates", "Ail", "Oignons", "Herbes"],
+      "instructions": [
+        "Faire revenir les oignons et l'ail dans de l'huile d'olive.",
+        "Ajouter les tomates concassées et les poissons.",
+        "Laisser mijoter à feu doux pendant 30 minutes."
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Tartare de thon",
+      "description": "Un tartare de thon frais aux saveurs asiatiques.",
+      "image": "assets/img/tartare_thon.jpg",
+      "ingredients": ["Thon frais", "Sauce soja", "Gingembre", "Citron vert", "Coriandre"],
+      "instructions": [
+        "Couper le thon en petits cubes.",
+        "Mélanger avec la sauce soja, le gingembre râpé et le jus de citron vert.",
+        "Servir frais avec de la coriandre."
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Risotto aux crevettes",
+      "description": "Un risotto crémeux garni de crevettes.",
+      "image": "assets/img/risotto_crevettes.jpg",
+      "ingredients": ["Riz Arborio", "Crevettes", "Bouillon", "Parmesan", "Ail"],
+      "instructions": [
+        "Faire revenir l'ail et ajouter le riz.",
+        "Incorporer le bouillon petit à petit.",
+        "Ajouter les crevettes en fin de cuisson et mélanger avec du parmesan."
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Paella aux fruits de mer",
+      "description": "Une paella espagnole riche en fruits de mer.",
+      "image": "assets/img/paella.jpg",
+      "ingredients": ["Riz", "Crevettes", "Calamars", "Moules", "Safran"],
+      "instructions": [
+        "Faire revenir les fruits de mer.",
+        "Ajouter le riz et le bouillon avec du safran.",
+        "Cuire jusqu'à absorption complète du liquide."
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Cabillaud au four",
+      "description": "Un cabillaud fondant avec des légumes rôtis.",
+      "image": "assets/img/cabillaud_four.jpg",
+      "ingredients": ["Cabillaud", "Courgettes", "Tomates", "Herbes de Provence", "Huile d'olive"],
+      "instructions": [
+        "Déposer le cabillaud et les légumes dans un plat.",
+        "Assaisonner avec des herbes, sel, poivre et un filet d'huile d'olive.",
+        "Cuire au four à 180°C pendant 25 minutes."
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Linguine aux palourdes",
+      "description": "Des pâtes délicates aux palourdes et ail.",
+      "image": "assets/img/linguine_palourdes.jpg",
+      "ingredients": ["Linguine", "Palourdes", "Ail", "Persil", "Vin blanc"],
+      "instructions": [
+        "Cuire les linguine selon les instructions.",
+        "Faire revenir l'ail et ajouter les palourdes avec du vin blanc.",
+        "Mélanger avec les pâtes et garnir de persil."
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Terrine de poisson",
+      "description": "Une terrine froide parfaite pour l'été.",
+      "image": "assets/img/terrine_poisson.jpg",
+      "ingredients": ["Poisson blanc", "Crème fraîche", "Œufs", "Herbes", "Échalotes"],
+      "instructions": [
+        "Mixer le poisson avec les œufs, la crème et les herbes.",
+        "Verser dans un moule et cuire au bain-marie.",
+        "Servir frais avec une salade."
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Brochettes de crevettes",
+      "description": "Des brochettes savoureuses à la plancha.",
+      "image": "assets/img/brochettes_crevettes.jpg",
+      "ingredients": ["Crevettes", "Ail", "Citron", "Huile d'olive", "Persil"],
+      "instructions": [
+        "Mariner les crevettes avec l'ail, citron et huile d'olive.",
+        "Piquer sur des brochettes et griller à la plancha.",
+        "Servir chaud avec du persil frais."
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Curry de poisson",
+      "description": "Un curry épicé et parfumé au lait de coco.",
+      "image": "assets/img/curry_poisson.jpg",
+      "ingredients": ["Poisson blanc", "Lait de coco", "Pâte de curry", "Tomates", "Oignons"],
+      "instructions": [
+        "Faire revenir les oignons et la pâte de curry.",
+        "Ajouter le poisson, les tomates et le lait de coco.",
+        "Laisser mijoter jusqu'à ce que le poisson soit tendre."
+      ]
+    }
+  ]
+  
