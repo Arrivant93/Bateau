@@ -1,0 +1,60 @@
+/* Style global pour le contenu de la page de contact */
+ion-content {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Titre principal */
+  ion-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    
+    margin-bottom: 15px;
+  }
+  
+  /* Description */
+  ion-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    
+    margin-bottom: 10px;
+  }
+  
+  /* Mettre en valeur les informations importantes */
+  ion-content strong {
+    color: #1a73e8; /* Bleu pour les labels importants */
+    font-weight: bold;
+  }
+  
+  /* Section de contact */
+  ion-content h2 {
+    font-size: 1.5rem;
+    color: #1a73e8;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Lien email et téléphone */
+  ion-content a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  ion-content a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Améliorer l'alignement et l'espacement */
+  div {
+    text-align: center;
+  }
+  
+  /* Style pour le texte d'encouragement à envoyer des photos */
+  ion-content p:last-of-type {
+    font-style: italic;
+    color: #888;
+    margin-top: 20px;
+  }
+  
