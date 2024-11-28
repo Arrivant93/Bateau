@@ -7,16 +7,12 @@
 <ion-content>
   <ion-segment scrollable>
     <ion-segment-button *ngFor="let category of categories">
-      <!-- Vérification pour afficher une image personnalisée -->
       <ng-container *ngIf="category.icon.startsWith('assets')">
         <img [src]="category.icon" alt="{{ category.name }}" style="width: 30px; height: 30px;" />
       </ng-container>
-
-      <!-- Affichage d'icône Ionicons -->
       <ng-container *ngIf="!category.icon.startsWith('assets')">
         <ion-icon [name]="category.icon"></ion-icon>
       </ng-container>
-      
       <ion-label>{{ category.name }}</ion-label>
     </ion-segment-button>
   </ion-segment>
@@ -28,10 +24,10 @@
           <img [src]="product.image" />
           <ion-card-header>
             <ion-card-title>{{ product.name }}</ion-card-title>
-            <ion-card-subtitle>{{ product.description }}</ion-card-subtitle>
+            <ion-card-subtitle>{{ product.comments }}</ion-card-subtitle>
           </ion-card-header>
           <ion-card-content>
-            <ion-label>{{ product.price  }}</ion-label>
+            <ion-label>{{ product.price}} € le {{ product.unit }}</ion-label>
           </ion-card-content>
         </ion-card>
       </ion-col>
