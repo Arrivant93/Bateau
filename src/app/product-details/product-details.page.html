@@ -31,7 +31,7 @@
       </div>
 
       
-      <p>Prix total : {{ totalPrice | currency:'EUR' }}</p>
+      <p>Prix total : {{ totalPrice }} €</p>
       
       
       <ion-button expand="block" color="primary">
@@ -53,7 +53,7 @@
         <ion-card-subtitle>{{ suggestedProduct.description }}</ion-card-subtitle>
       </ion-card-header>
       <ion-card-content>
-        <p>Prix : {{ suggestedProduct.price }}</p>
+        <p>Prix : {{ suggestedProduct.price }} €</p>
       </ion-card-content>
     </ion-card>
   </ion-list>
