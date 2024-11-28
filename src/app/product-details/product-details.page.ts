@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-product-details',
@@ -18,7 +19,8 @@ export class ProductDetailsPage implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private http: HttpClient
+    private http: HttpClient,
+    private cartService: CartService
   ) {}
 
   ngOnInit() {
@@ -84,5 +86,10 @@ export class ProductDetailsPage implements OnInit {
   
   onProductClick(product: any) {
     this.router.navigate(['/product-details', product.id]);
+  }
+  
+  addToCart(product: any) {
+    this.cartService.addToCart(product);
+    alert('Produit ajouté au panier !');
   }
 }
