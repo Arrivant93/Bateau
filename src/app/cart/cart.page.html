@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Panier</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let product of cart">
+      <ion-thumbnail slot="start">
+        <img [src]="product.image" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ product.name }}</h2>
+        <p>Prix : {{ product.price | currency:'EUR':'symbol':'1.0-0' }}</p>
+        <p>Quantité : {{ product.quantity }}</p>
+      </ion-label>
+      <ion-button (click)="removeItem(product)" color="danger" fill="clear">
+        <ion-icon name="trash-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+  <div>
+    <p>Total : {{ total | currency:'EUR':'symbol':'1.0-0' }}</p>
+    <ion-button expand="block" color="success">Commander</ion-button>
+  </div>
+</ion-content>
+
+<ng-template #emptyCart>
+  <p>Votre panier est vide.</p>
+</ng-template>

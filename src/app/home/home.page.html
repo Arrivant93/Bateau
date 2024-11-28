@@ -1,6 +1,12 @@
 <ion-header>
   <ion-toolbar>
     <ion-searchbar placeholder="Rechercher des produits..."></ion-searchbar>
+    <ion-buttons slot="end" *ngIf="cartItemCount > 0">
+      <ion-button [routerLink]="'/cart'">
+        <ion-icon name="cart-outline"></ion-icon>
+        <ion-badge>{{ cartItemCount }}</ion-badge>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -27,7 +33,7 @@
             <ion-card-subtitle>{{ product.comments }}</ion-card-subtitle>
           </ion-card-header>
           <ion-card-content>
-            <ion-label>{{ product.price}} € le {{ product.unit }}</ion-label>
+            <ion-label>{{ product.price }} € le {{ product.unit }}</ion-label>
           </ion-card-content>
         </ion-card>
       </ion-col>

@@ -34,7 +34,7 @@
       <p>Prix total : {{ totalPrice }} €</p>
       
       
-      <ion-button expand="block" color="primary">
+      <ion-button expand="block" color="primary" (click)="addToCart(product, quantity)">
         Ajouter au panier
       </ion-button>
     </ion-card-content>
